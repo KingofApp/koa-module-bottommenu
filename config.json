@@ -1,0 +1,36 @@
+{
+  "name": "Bottom Menu",
+  "identifier": "bottommenu",
+  "description": "",
+  "documentation": "",
+  "type": "A",
+  "icon": "menu",
+  "version": "1.0",
+  "author": "King of App",
+  "showOn": {
+    "menu": false,
+    "market": true,
+    "dragDrop": true
+  },
+  "requires": [],
+  "canContain": true,
+  "view": "modules/koa-module-bottommenu/index.html",
+  "files": ["modules/koa-module-bottommenu/controller.js"],
+  "libs": [{
+    "bower": "",
+    "src":"modules/koa-module-bottommenu/styles.html"
+  }],
+  "scope": {
+    "path": "/bottommenu",
+    "showicons": true
+  },
+  "config": [{
+    "type": "checkbox",
+    "key": "showicons",
+    "templateOptions": {
+      "description": "Show menu icons",
+      "label": "Menu icons"
+    }
+  }],
+  "descriptionShort": ""
+}
