@@ -1,7 +1,9 @@
 <div class="bottommenu" ng-controller="BottomMenuController">
 
-  <!-- moduleIdentifier + Template -->
-  <div ng-include="bottommenuTemplate"></div>
+  <div id="main">
+    <!-- moduleIdentifier + Template -->
+    <div ng-include="bottommenuTemplate"></div>
+  </div>
 
   <div id="menu">
     <koa-grid columns="{{bottommenu.modules.length}}">
