@@ -1,14 +1,27 @@
 <style is="custom-style">
-  #menu {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    left: 0;
+  .bottommenu {
+    @apply(--layout-vertical);
+    @apply(--layout-fullbleed);
+  }
 
+  .bottommenu #main {
+    @apply(--layout-vertical);
+    @apply(--layout-flex);
+
+    position: relative;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+
+    min-height: 0;
+  }
+
+  .bottommenu #menu {
     background-color: #9A9A9A;
   }
 
-  #menu a {
+  .bottommenu #menu a {
     box-sizing: border-box;
     padding: .5em;
 
@@ -20,7 +33,7 @@
     font-size: .8em;
   }
 
-  #menu a koa-icon {
-    color: #D2D2D2;
+  .bottommenu #menu a koa-icon {
+    color: inherit;
   }
 </style>
