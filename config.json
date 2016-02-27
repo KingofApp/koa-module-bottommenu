@@ -16,21 +16,31 @@
   "canContain": true,
   "view": "modules/koa-module-bottommenu/index.html",
   "files": ["modules/koa-module-bottommenu/controller.js"],
-  "libs": [{
-    "bower": "",
-    "src":"modules/koa-module-bottommenu/styles.html"
-  }],
+  "libs": [
+    {
+      "bower": {
+        "PolymerElements/iron-flex-layout": "^1.0.0"
+      },
+      "src": "http://resources.kingofapp.com/bower_components/iron-flex-layout/iron-flex-layout.html"
+    },
+    {
+      "bower": "",
+      "src":"modules/koa-module-bottommenu/styles.html"
+    }
+  ],
   "scope": {
     "path": "/bottommenu",
     "showicons": true
   },
-  "config": [{
-    "type": "checkbox",
-    "key": "showicons",
-    "templateOptions": {
-      "description": "Show menu icons",
-      "label": "Menu icons"
+  "config": [
+    {
+      "type": "checkbox",
+      "key": "showicons",
+      "templateOptions": {
+        "description": "Show menu icons",
+        "label": "Menu icons"
+      }
     }
-  }],
+  ],
   "descriptionShort": ""
 }
