@@ -19,9 +19,9 @@
   "libs": [
     {
       "bower": {
-        "PolymerElements/iron-flex-layout": "^1.0.0"
+        "PolymerElements/iron-flex-layout": "^1.3.0"
       },
-      "src": "http://resources.kingofapp.com/bower_components/iron-flex-layout/iron-flex-layout.html"
+      "src": "../bower_components/iron-flex-layout/iron-flex-layout.html"
     },
     {
       "bower": "",
