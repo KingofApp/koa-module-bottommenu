@@ -30,7 +30,9 @@
   ],
   "scope": {
     "path": "/bottommenu",
-    "showicons": true
+    "showicons": true,
+    "backgroundColor": "",
+    "color": ""
   },
   "config": [
     {
@@ -40,6 +42,22 @@
         "description": "Show menu icons",
         "label": "Menu icons"
       }
+    },
+    {
+      "key": "backgroundColor",
+      "type": "input",
+      "templateOptions": {
+        "label": "Background color",
+        "description": "The background color"
+      }
+    },
+    {
+      "key": "color",
+      "type": "input",
+      "templateOptions": {
+        "label": "Text color",
+        "description": "The text color"
+      }
     }
-  ],
+  ]
 }
