@@ -1,7 +1,8 @@
 {
   "name": "Bottom Menu",
   "identifier": "bottommenu",
-  "description": "",
+  "description": "Menu fixed at the bottom of your App. Specially useful when few elements shall be shown",
+  "descriptionShort": "Bottomfixed menu",
   "documentation": "",
   "type": "A",
   "icon": "menu",
@@ -42,5 +43,4 @@
       }
     }
   ],
-  "descriptionShort": ""
 }
