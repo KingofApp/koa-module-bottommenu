@@ -15,10 +15,10 @@
   },
   "requires": [],
   "canContain": true,
-  "view": "modules/koa-module-bottommenu/index.html",
+  "view": "modules/bottommenu/index.html",
   "files": [
-    "modules/koa-module-bottommenu/controller.js",
-    "modules/koa-module-bottommenu/styles.html"
+    "modules/bottommenu/controller.js",
+    "modules/bottommenu/styles.html"
   ],
   "libs": [
     {
