@@ -1,20 +1,49 @@
 {
   "name": "Bottom Menu",
   "identifier": "bottommenu",
-  "description": "Menu fixed at the bottom of your App. Specially useful when few elements shall be shown",
-  "descriptionShort": "Bottomfixed menu",
-  "documentation": "",
   "type": "A",
-  "icon": "menu",
   "version": "1.0",
   "author": "King of App",
+  "category": [
+    "menu"
+  ],
+  "platforms" : [
+    "android",
+    "ios",
+    "windows"
+  ],
+  "price": 0,
+  "subscription": false,
+  "canContain": true,
+  "icon": "menu",
+  "description": {
+    "en-US" : "Menu fixed at the bottom of your App. Specially useful when few elements shall be shown",
+    "es-ES" : "Menú que se fija en la parte inferior de la App. Especialmente indicado cuando no se quieren mostrar más de cinco elementos."
+  },
+  "descriptionShort": {
+    "en-US" : "Bottomfixed menu",
+    "es-ES" : "Menú fijo inferior"
+  },
+  "documentation": {
+    "en-US" : "",
+    "es-ES" : ""
+  },
+  "images" : {
+    "list" : "images/list.png",
+    "screenshots" : [
+      "images/screenshot01.png",
+      "images/screenshot02.png"
+    ],
+    "popover" : "images/popover.png",
+    "banner" : "images/banner.png",
+    "logo" : "images/logo.png"
+  },
   "showOn": {
     "menu": false,
     "market": true,
     "dragDrop": true
   },
   "requires": [],
-  "canContain": true,
   "view": "modules/bottommenu/index.html",
   "files": [
     "modules/bottommenu/controller.js",
