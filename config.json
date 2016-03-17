@@ -29,14 +29,14 @@
     "es-ES" : ""
   },
   "images" : {
-    "list" : "images/list.png",
+    "list" : "modules/bottommenu/images/list.png",
     "screenshots" : [
-      "images/screenshot01.png",
-      "images/screenshot02.png"
+      "modules/bottommenu/images/screenshot01.png",
+      "modules/bottommenu/images/screenshot02.png"
     ],
-    "popover" : "images/popover.png",
-    "banner" : "images/banner.png",
-    "logo" : "images/logo.png"
+    "popover" : "modules/bottommenu/images/popover.png",
+    "banner" : "modules/bottommenu/images/banner.png",
+    "logo" : "modules/bottommenu/images/logo.png"
   },
   "showOn": {
     "menu": false,
