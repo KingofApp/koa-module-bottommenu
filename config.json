@@ -1,36 +1,92 @@
 {
   "name": "Bottom Menu",
   "identifier": "bottommenu",
-  "description": "",
-  "documentation": "",
   "type": "A",
-  "icon": "menu",
-  "version": "1.0",
+  "version": "1.0.0",
   "author": "King of App",
+  "category": [
+    "menu"
+  ],
+  "platforms" : [
+    "android",
+    "ios",
+    "windows"
+  ],
+  "price": 0,
+  "subscription": false,
+  "canContain": true,
+  "icon": "menu",
+  "description": {
+    "en-US" : "Menu fixed at the bottom of your App. Specially useful when few elements shall be shown",
+    "es-ES" : "Menú que se fija en la parte inferior de la App. Especialmente indicado cuando no se quieren mostrar más de cinco elementos."
+  },
+  "descriptionShort": {
+    "en-US" : "Bottomfixed menu",
+    "es-ES" : "Menú fijo inferior"
+  },
+  "documentation": {
+    "en-US" : "",
+    "es-ES" : ""
+  },
+  "images" : {
+    "list" : "modules/bottommenu/images/list.png",
+    "screenshots" : [
+      "modules/bottommenu/images/screenshot01.png",
+      "modules/bottommenu/images/screenshot02.png"
+    ],
+    "popover" : "modules/bottommenu/images/popover.png",
+    "banner" : "modules/bottommenu/images/banner.png",
+    "logo" : "modules/bottommenu/images/logo.png"
+  },
   "showOn": {
     "menu": false,
     "market": true,
     "dragDrop": true
   },
   "requires": [],
-  "canContain": true,
-  "view": "modules/koa-module-bottommenu/index.html",
-  "files": ["modules/koa-module-bottommenu/controller.js"],
-  "libs": [{
-    "bower": "",
-    "src":"modules/koa-module-bottommenu/styles.html"
-  }],
+  "view": "modules/bottommenu/index.html",
+  "files": [
+    "modules/bottommenu/controller.js",
+    "modules/bottommenu/styles.html"
+  ],
+  "libs": [
+    {
+      "bower": {
+        "PolymerElements/iron-flex-layout": "^1.3.0"
+      },
+      "src": "bower_components/iron-flex-layout/iron-flex-layout.html"
+    }
+  ],
   "scope": {
     "path": "/bottommenu",
-    "showicons": true
+    "showicons": true,
+    "backgroundColor": "",
+    "color": ""
   },
-  "config": [{
-    "type": "checkbox",
-    "key": "showicons",
-    "templateOptions": {
-      "description": "Show menu icons",
-      "label": "Menu icons"
+  "config": [
+    {
+      "type": "checkbox",
+      "key": "showicons",
+      "templateOptions": {
+        "description": "Show menu icons",
+        "label": "Menu icons"
+      }
+    },
+    {
+      "key": "backgroundColor",
+      "type": "input",
+      "templateOptions": {
+        "label": "Background color",
+        "description": "The background color"
+      }
+    },
+    {
+      "key": "color",
+      "type": "input",
+      "templateOptions": {
+        "label": "Text color",
+        "description": "The text color"
+      }
     }
-  }],
-  "descriptionShort": ""
+  ]
 }

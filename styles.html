@@ -1,26 +1,41 @@
 <style is="custom-style">
-  #menu {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    left: 0;
-
-    background-color: #9A9A9A;
+  .bottommenu {
+    @apply(--layout-vertical);
+    @apply(--layout-fullbleed);
   }
 
-  #menu a {
+  .bottommenu #main {
+    @apply(--layout-vertical);
+    @apply(--layout-flex);
+
+    position: relative;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+
+    min-height: 0;
+  }
+
+  .bottommenu #menu {
+    z-index: 9;
+
+    background-color: var(--primary-color);
+  }
+
+  .bottommenu #menu a {
     box-sizing: border-box;
     padding: .5em;
 
     text-align: center;
     text-decoration: none;
 
-    color: #D2D2D2;
+    color: #FFFFFF;
 
     font-size: .8em;
   }
 
-  #menu a koa-icon {
-    color: #D2D2D2;
+  .bottommenu #menu a koa-icon {
+    color: inherit;
   }
 </style>
