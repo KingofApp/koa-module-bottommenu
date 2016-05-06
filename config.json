@@ -59,7 +59,10 @@
     "backgroundImages": [],
     "backgroundColors": [],
     "path": "/bottommenu",
-    "showicons": true
+    "showicons": true,
+    "showtext": true,
+    "backgroundColor": "",
+    "color": ""
   },
   "config": [
     {
@@ -103,6 +106,30 @@
       "templateOptions": {
         "description": "Show menu icons",
         "label": "Menu icons"
+      }
+    },
+    {
+      "type": "checkbox",
+      "key": "showtext",
+      "templateOptions": {
+        "description": "Show menu text",
+        "label": "Menu text"
+      }
+    },
+    {
+      "key": "backgroundColor",
+      "type": "input",
+      "templateOptions": {
+        "label": "Background color",
+        "description": "The background color"
+      }
+    },
+    {
+      "key": "color",
+      "type": "input",
+      "templateOptions": {
+        "label": "Text color",
+        "description": "The text color"
       }
     }
   ]
