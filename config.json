@@ -115,22 +115,6 @@
         "description": "Show menu text",
         "label": "Menu text"
       }
-    },
-    {
-      "key": "backgroundColor",
-      "type": "input",
-      "templateOptions": {
-        "label": "Background color",
-        "description": "The background color"
-      }
-    },
-    {
-      "key": "color",
-      "type": "input",
-      "templateOptions": {
-        "label": "Text color",
-        "description": "The text color"
-      }
     }
   ]
 }
