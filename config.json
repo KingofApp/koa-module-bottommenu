@@ -29,7 +29,7 @@
     "es-ES" : ""
   },
   "images" : {
-    "list" : "modules/bottommenu/images/bottommenu_list.png",
+    "list" : "modules/bottommenu/images/bottommenu_list",
     "screenshots" : ["modules/bottommenu/images/bottommenu_screenshot01.png",
     "modules/bottommenu/images/bottommenu_screenshot02.png"],
     "popover" : "modules/bottommenu/images/bottommenu_popover.png",
