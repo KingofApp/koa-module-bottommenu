@@ -22,19 +22,16 @@
     function getModules() {
       var modules = [];
 
-      function processChild(url, index) {
-        url = url.replace('#', '');
+      function processChild(value.path, index) {
 
-        structureService.getModule(url).then(function(module) {
-          var backgroundImage = moduleConfig.backgroundImages[index];
-          var backgroundColor = moduleConfig.backgroundColors[index];
 
+        structureService.getModule(value.path).then(function(module) {
           modules.push({
             text: module.name,
             icon: module.icon,
-            url: '#' + url,
-            backgroundColor: (backgroundColor) ? backgroundColor : '',
-            backgroundImage: (backgroundImage) ? backgroundImage : ''
+            url: '#' + value.path,
+            backgroundImage: value.bgImage,
+            backgroundColor: value.bgColor
           });
         });
       }
