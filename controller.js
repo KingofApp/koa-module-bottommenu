@@ -22,7 +22,7 @@
     function getModules() {
       var modules = [];
 
-      function processChild(value.path, index) {
+      function processChild(value, index) {
 
 
         structureService.getModule(value.path).then(function(module) {
