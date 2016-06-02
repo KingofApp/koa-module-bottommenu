@@ -13,28 +13,30 @@
 
     var moduleScope = $scope.bottommenu;
     var moduleConfig = $scope.bottommenu.modulescope;
+    $scope.showMenu = function() {
+      moduleScope.shown = moduleScope.shown ? false : true;
+    }
 
     moduleScope.modules = getModules();
 
     function getModules() {
       var modules = [];
-      var children = structureService.getChildren(moduleConfig.path);
 
-      function processChild(child, childUrl) {
-        structureService.getModule(childUrl).then(function(module) {
-          if (module.showOn.menu) {
-            var xxx = {
-              text: child.name,
-              icon: moduleConfig.showicons ? child.icon : '',
-              url: '#' + childUrl,
-              class: child.name.replace(/[\/\s]+/gi, '-')
-            }
-            modules.push(xxx);
-          }
+      function processChild(value, index) {
+
+
+        structureService.getModule(value.path).then(function(module) {
+          modules.push({
+            text: module.name,
+            icon: module.icon,
+            url: '#' + value.path,
+            backgroundImage: value.bgImage,
+            backgroundColor: value.bgColor
+          });
         });
       }
 
-      angular.forEach(children, processChild);
+      angular.forEach(moduleConfig.menuItems, processChild);
 
       return modules;
     }

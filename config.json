@@ -2,7 +2,7 @@
   "name": "Bottom Menu",
   "identifier": "bottommenu",
   "type": "A",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "author": "King of App",
   "category": [
     "menu"
@@ -29,10 +29,11 @@
     "es-ES" : ""
   },
   "images" : {
-    "list" : "modules/bottommenu/images/bottommenu_banner.png",
-    "screenshots" : ["modules/bottommenu/images/bottommenu_screenshot01.png"],
-    "popover" : "modules/bottommenu/images/bottommenu_banner.png",
-    "banner" : "modules/bottommenu/images/bottommenu_banner2.png",
+    "list" : "modules/bottommenu/images/bottommenu_list.png",
+    "screenshots" : ["modules/bottommenu/images/bottommenu_screenshot01.png",
+    "modules/bottommenu/images/bottommenu_screenshot02.png"],
+    "popover" : "modules/bottommenu/images/bottommenu_popover.png",
+    "banner" : "modules/bottommenu/images/bottommenu_popover.png",
     "logo" : "modules/bottommenu/images/bottommenu_icon.png"
   },
   "showOn": {
@@ -55,12 +56,44 @@
     }
   ],
   "scope": {
+    "menuItems": [],
     "path": "/bottommenu",
     "showicons": true,
+    "showtext": true,
     "backgroundColor": "",
     "color": ""
   },
   "config": [
+    {
+      "type": "repeatSection",
+      "key": "menuItems",
+      "templateOptions": {
+        "label": "Items",
+        "btnText": "Add another item to the menu",
+        "fields": [{
+          "type": "select",
+          "key": "path",
+          "templateOptions": {
+            "label": "Path",
+            "required": true
+          }
+        }, {
+          "type": "input",
+          "key": "bgImage",
+          "templateOptions": {
+            "label": "Background Image URL",
+            "placeholder": "(Optional)"
+          }
+        }, {
+          "type": "input",
+          "key": "bgColor",
+          "templateOptions": {
+            "label": "Background Color",
+            "placeholder": "(Optional)"
+          }
+        }]
+      }
+    },
     {
       "type": "checkbox",
       "key": "showicons",
@@ -70,19 +103,11 @@
       }
     },
     {
-      "key": "backgroundColor",
-      "type": "input",
+      "type": "checkbox",
+      "key": "showtext",
       "templateOptions": {
-        "label": "Background color",
-        "description": "The background color"
-      }
-    },
-    {
-      "key": "color",
-      "type": "input",
-      "templateOptions": {
-        "label": "Text color",
-        "description": "The text color"
+        "description": "Show menu text",
+        "label": "Menu text"
       }
     }
   ]

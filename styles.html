@@ -1,12 +1,14 @@
 <style is="custom-style">
   .bottommenu {
     @apply(--layout-vertical);
-    @apply(--layout-fullbleed);
+    /*@apply(--layout-fullbleed);*/
+    height:100%;
   }
 
   .bottommenu #main {
     @apply(--layout-vertical);
-    @apply(--layout-flex);
+    height: 100%;
+    width: 100%;
 
     position: relative;
 
@@ -18,19 +20,17 @@
   }
 
   .bottommenu #menu {
-    z-index: 9;
-
+    z-index: 5;
+    overflow:hidden;
     background-color: var(--primary-color);
   }
 
-  .bottommenu #menu a {
+  .bottommenu > #menu a {
     box-sizing: border-box;
     padding: .5em;
 
     text-align: center;
     text-decoration: none;
-
-    color: #FFFFFF;
 
     font-size: .8em;
   }
