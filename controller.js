@@ -23,15 +23,14 @@
       var modules = [];
 
       function processChild(value, index) {
-
-
+        var color = (value.bgColor) ? '#' + value.bgColor.replace('#','') : '';
         structureService.getModule(value.path).then(function(module) {
           modules.push({
             text: module.name,
             icon: module.icon,
             url: '#' + value.path,
             backgroundImage: value.bgImage,
-            backgroundColor: '#' + value.bgColor.replace('#','')
+            backgroundColor: color
           });
         });
       }
