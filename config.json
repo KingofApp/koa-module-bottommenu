@@ -2,7 +2,7 @@
   "name": "Bottom Menu",
   "identifier": "bottommenu",
   "type": "A",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "author": "King of App",
   "category": [
     "menu"
@@ -60,6 +60,7 @@
     "path": "/bottommenu",
     "showicons": true,
     "showtext": true,
+    "showtopborder": true,
     "backgroundColor": "",
     "color": ""
   },
@@ -108,6 +109,14 @@
       "templateOptions": {
         "description": "Show menu text",
         "label": "Menu text"
+      }
+    },
+    {
+      "type": "checkbox",
+      "key": "showtopborder",
+      "templateOptions": {
+        "description": "Show top border",
+        "label": "Menu border top"
       }
     }
   ]
