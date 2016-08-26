@@ -5,6 +5,10 @@
     height:100%;
   }
 
+  .bordered {
+    border-top: 1px solid var(--secondary-color);
+  }
+
   .bottommenu #main {
     @apply(--layout-vertical);
     height: 100%;
@@ -39,7 +43,8 @@
     color: inherit;
   }
 
-  .bordered {
-    border-top: 1px solid var(--secondary-color);
+  a.selected {
+    background-color: var(--secondary-text-color) !important;
+    color: var(--primary-background-color) !important;
   }
 </style>
