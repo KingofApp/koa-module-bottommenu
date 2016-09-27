@@ -16,6 +16,7 @@
     $scope.showMenu = function() {
       moduleScope.shown = moduleScope.shown ? false : true;
     }
+    $rootScope.currentIndex = -1;
 
     moduleScope.modules = getModules();
 
@@ -23,13 +24,11 @@
       var modules = [];
 
       function processChild(value, index) {
-
-        if( (typeof($rootScope.currentIndex) === 'undefined') || ($location.path() === value.path)){
-          $rootScope.currentIndex = index;
-        }
-        
         var color = (value.bgColor) ? '#' + value.bgColor.replace('#','') : '';
         structureService.getModule(value.path).then(function(module) {
+          if( $location.path() === value.path ){
+            $rootScope.currentIndex = index;
+          }
           modules.push({
             text: module.name,
             icon: module.icon,
