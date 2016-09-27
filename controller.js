@@ -23,6 +23,11 @@
       var modules = [];
 
       function processChild(value, index) {
+
+        if( (typeof($rootScope.currentIndex) === 'undefined') || ($location.path() === value.path)){
+          $rootScope.currentIndex = index;
+        }
+        
         var color = (value.bgColor) ? '#' + value.bgColor.replace('#','') : '';
         structureService.getModule(value.path).then(function(module) {
           modules.push({
