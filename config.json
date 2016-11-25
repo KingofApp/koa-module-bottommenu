@@ -2,7 +2,7 @@
   "name": "Bottom Menu",
   "identifier": "bottommenu",
   "type": "A",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "author": "King of App",
   "category": [
     "menu"
@@ -25,8 +25,8 @@
     "es-ES" : "Menú fijo inferior"
   },
   "documentation": {
-    "en-US" : "",
-    "es-ES" : ""
+    "es-ES": "modules/bottommenu/documentation/es_ES.md",
+    "en-US": "modules/bottommenu/documentation/en_US.md"
   },
   "images" : {
     "list" : "modules/bottommenu/images/bottommenu_list.png",
