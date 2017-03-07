@@ -2,7 +2,7 @@
   "name": "Bottom Menu",
   "identifier": "bottommenu",
   "type": "A",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "author": "King of App",
   "category": [
     "menu"
@@ -17,12 +17,12 @@
   "canContain": true,
   "icon": "menu",
   "description": {
-    "en-US" : "Menu fixed at the bottom of your App. Specially useful when few elements shall be shown",
-    "es-ES" : "Menú que se fija en la parte inferior de la App. Especialmente indicado cuando no se quieren mostrar más de cinco elementos."
+    "en-US" : "Visualize your content elegantly and professionally with this menu that is set at the bottom of the app. If you do not want to display a lot of information, this menu is ideal for less than five elements.",
+    "es-ES" : "Visualiza tu contenido de forma elegante y profesional con este menú que se fija en la parte inferior de la app. Si no quieres mostrar mucha información, este menú es ideal para menos de cinco elementos."
   },
   "descriptionShort": {
-    "en-US" : "Bottomfixed menu",
-    "es-ES" : "Menú fijo inferior"
+    "en-US" : "Visualize your content professionally by activating this menu!",
+    "es-ES" : "Visualiza tu contenido de forma profesional activando este menú!"
   },
   "documentation": {
     "es-ES": "modules/bottommenu/documentation/es_ES.md",
