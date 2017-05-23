@@ -1,123 +1,129 @@
 {
-  "name": "Bottom Menu",
-  "identifier": "bottommenu",
-  "type": "A",
-  "version": "1.0.14",
-  "author": "King of App",
-  "category": [
-    "menu"
-  ],
-  "platforms" : [
-    "android",
-    "ios",
-    "windows"
-  ],
-  "price": 0,
-  "subscription": false,
-  "canContain": true,
-  "icon": "menu",
-  "description": {
-    "en-US" : "Visualize your content elegantly and professionally with this menu that is set at the bottom of the app. If you do not want to display a lot of information, this menu is ideal for less than five elements.",
-    "es-ES" : "Visualiza tu contenido de forma elegante y profesional con este menú que se fija en la parte inferior de la app. Si no quieres mostrar mucha información, este menú es ideal para menos de cinco elementos."
-  },
-  "descriptionShort": {
-    "en-US" : "Visualize your content professionally by activating this menu!",
-    "es-ES" : "Visualiza tu contenido de forma profesional activando este menú!"
-  },
-  "documentation": {
-    "es-ES": "modules/bottommenu/documentation/es_ES.md",
-    "en-US": "modules/bottommenu/documentation/en_US.md"
-  },
-  "images" : {
-    "list" : "modules/bottommenu/images/bottommenu_list.png",
-    "screenshots" : ["modules/bottommenu/images/bottommenu_screenshot01.png",
-    "modules/bottommenu/images/bottommenu_screenshot02.png"],
-    "popover" : "modules/bottommenu/images/bottommenu_popover.png",
-    "banner" : "modules/bottommenu/images/bottommenu_popover.png",
-    "logo" : "modules/bottommenu/images/bottommenu_icon.png"
-  },
-  "showOn": {
-    "menu": false,
-    "market": true,
-    "dragDrop": true
-  },
-  "requires": [],
-  "view": "modules/bottommenu/index.html",
-  "files": [
-    "modules/bottommenu/controller.js",
-    "modules/bottommenu/styles.html"
-  ],
-  "libs": [
-    {
-      "bower": {
-        "PolymerElements/iron-flex-layout": "^1.3.0"
-      },
-      "src": "bower_components/iron-flex-layout/iron-flex-layout.html"
-    }
-  ],
-  "scope": {
-    "menuItems": [],
-    "path": "/bottommenu",
-    "showicons": true,
-    "showtext": true,
-    "showtopborder": true,
-    "backgroundColor": "",
-    "color": ""
-  },
-  "config": [
-    {
-      "type": "repeatSection",
-      "key": "menuItems",
-      "templateOptions": {
-        "label": "Items",
-        "btnText": "Add another item to the menu",
-        "fields": [{
-          "type": "select",
-          "key": "path",
-          "templateOptions": {
-            "label": "Path",
-            "required": true
-          }
-        }, {
-          "type": "input",
-          "key": "bgImage",
-          "templateOptions": {
-            "label": "Background Image URL",
-            "placeholder": "(Optional)"
-          }
-        }, {
-          "type": "input",
-          "key": "bgColor",
-          "templateOptions": {
-            "label": "Background Color",
-            "placeholder": "(Optional)"
-          }
-        }]
-      }
+    "name": "Bottom Menu",
+    "identifier": "bottommenu",
+    "type": "A",
+    "version": "1.0.15",
+    "author": "King of App",
+    "category": [
+        "menu"
+    ],
+    "platforms": [
+        "android",
+        "ios",
+        "windows"
+    ],
+    "price": 0,
+    "subscription": false,
+    "canContain": true,
+    "icon": "menu",
+    "description": {
+        "en-US": "Visualize your content elegantly and professionally with this menu that is set at the bottom of the app. If you do not want to display a lot of information, this menu is ideal for less than five elements.",
+        "es-ES": "Visualiza tu contenido de forma elegante y profesional con este menú que se fija en la parte inferior de la app. Si no quieres mostrar mucha información, este menú es ideal para menos de cinco elementos."
     },
-    {
-      "type": "checkbox",
-      "key": "showicons",
-      "templateOptions": {
-        "description": "Show menu icons",
-        "label": "Menu icons"
-      }
+    "descriptionShort": {
+        "en-US": "Visualize your content professionally by activating this menu!",
+        "es-ES": "Visualiza tu contenido de forma profesional activando este menú!"
     },
-    {
-      "type": "checkbox",
-      "key": "showtext",
-      "templateOptions": {
-        "description": "Show menu text",
-        "label": "Menu text"
-      }
+    "documentation": {
+        "es-ES": "modules/bottommenu/documentation/es_ES.md",
+        "en-US": "modules/bottommenu/documentation/en_US.md"
     },
-    {
-      "type": "checkbox",
-      "key": "showtopborder",
-      "templateOptions": {
-        "description": "Show top border",
-        "label": "Menu border top"
-      }
-    }
-  ]
+    "images": {
+        "list": "modules/bottommenu/images/bottommenu_list.png",
+        "screenshots": [
+            "modules/bottommenu/images/bottommenu_screenshot01.png",
+            "modules/bottommenu/images/bottommenu_screenshot02.png"
+        ],
+        "popover": "modules/bottommenu/images/bottommenu_popover.png",
+        "banner": "modules/bottommenu/images/bottommenu_popover.png",
+        "logo": "modules/bottommenu/images/bottommenu_icon.png"
+    },
+    "showOn": {
+        "menu": false,
+        "market": true,
+        "dragDrop": true
+    },
+    "requires": [],
+    "view": "modules/bottommenu/index.html",
+    "files": [
+        "modules/bottommenu/controller.js",
+        "modules/bottommenu/styles.html"
+    ],
+    "libs": [
+        {
+            "bower": {
+                "PolymerElements/iron-flex-layout": "^1.3.0"
+            },
+            "src": "bower_components/iron-flex-layout/iron-flex-layout.html"
+        }
+    ],
+    "scope": {
+        "menuItems": [],
+        "path": "/bottommenu",
+        "showicons": true,
+        "showtext": true,
+        "showtopborder": true,
+        "backgroundColor": "",
+        "color": ""
+    },
+    "config": [
+        {
+            "type": "repeatSection",
+            "key": "menuItems",
+            "templateOptions": {
+                "label": "Items",
+                "btnText": "Add another item to the menu",
+                "fields": [
+                    {
+                        "type": "select",
+                        "key": "path",
+                        "templateOptions": {
+                            "label": "Path",
+                            "required": true
+                        }
+                    },
+                    {
+                        "type": "input",
+                        "key": "bgImage",
+                        "templateOptions": {
+                            "label": "Background Image URL",
+                            "placeholder": "(Optional)"
+                        }
+                    },
+                    {
+                        "type": "input",
+                        "key": "bgColor",
+                        "templateOptions": {
+                            "label": "Background Color",
+                            "placeholder": "(Optional)"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "type": "checkbox",
+            "key": "showicons",
+            "templateOptions": {
+                "description": "Show menu icons",
+                "label": "Menu icons"
+            }
+        },
+        {
+            "type": "checkbox",
+            "key": "showtext",
+            "templateOptions": {
+                "description": "Show menu text",
+                "label": "Menu text"
+            }
+        },
+        {
+            "type": "checkbox",
+            "key": "showtopborder",
+            "templateOptions": {
+                "description": "Show top border",
+                "label": "Menu border top"
+            }
+        }
+    ]
 }
