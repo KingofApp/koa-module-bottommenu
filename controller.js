@@ -12,17 +12,15 @@
     structureService.registerModule($location, $scope, 'bottommenu');
 
     var moduleScope = $scope.bottommenu;
-    var moduleConfig = $scope.bottommenu.modulescope;
+    $scope.moduleConfig = $scope.bottommenu.modulescope;
     $scope.showMenu = function() {
       moduleScope.shown = moduleScope.shown ? false : true;
     }
     $rootScope.currentIndex = -1;
-
     moduleScope.modules = getModules();
-
+    var modules;
     function getModules() {
-      var modules = [];
-
+      modules = [];
       function processChild(value, index) {
         var color = (value.bgColor) ? '#' + value.bgColor.replace('#','') : '';
         structureService.getModule(value.path).then(function(module) {
@@ -39,9 +37,21 @@
         });
       }
 
-      angular.forEach(moduleConfig.menuItems, processChild);
+      angular.forEach($scope.moduleConfig.menuItems, processChild);
 
       return modules;
+    }
+
+    $scope.modulename = function(){
+        var pathmodule = $location.$$path;
+        var moduleName;
+
+        for(var i = 0; i<modules.length; i++){
+		      if(modules[i].url === "#" + pathmodule){
+        	   moduleName = modules[i].text;
+    	    }
+	       }
+	    return moduleName;
     }
   }
 

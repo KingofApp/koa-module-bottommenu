@@ -64,7 +64,9 @@
         "showtext": true,
         "showtopborder": true,
         "backgroundColor": "",
-        "color": ""
+        "color": "",
+        "headBackgroundImage": "",
+        "headcolor": ""
     },
     "config": [
         {
@@ -120,6 +122,22 @@
         {
             "type": "checkbox",
             "key": "showtopborder",
+            "templateOptions": {
+                "description": "Show top border",
+                "label": "Menu border top"
+            }
+        },
+        {
+            "type": "input",
+            "key": "headBackgroundImage",
+            "templateOptions": {
+                "description": "Head bar image",
+                "label": "Menu border top image"
+            }
+        },
+        {
+            "type": "input",
+            "key": "headcolor",
             "templateOptions": {
                 "description": "Show top border",
                 "label": "Menu border top"
